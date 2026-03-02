@@ -1,0 +1,19 @@
+{
+  "name": "treasure-chest-game",
+  "version": "1.0.0",
+  "description": "Production-ready treasure chest slot game built with PIXI.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "pixi.js": "^7.4.2",
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}
