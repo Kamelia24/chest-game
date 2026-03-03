@@ -1,4 +1,4 @@
-export const GameConfig = Object.freeze({
+export const GameConfig = {
   // Canvas
   WIDTH: window.innerWidth,
   HEIGHT: window.innerHeight,
@@ -62,7 +62,7 @@ export const GameConfig = Object.freeze({
   },
 
   // Chest states
-  CHEST_STATE: Object.freeze({
+  CHEST_STATE: {
     IDLE: 'IDLE',
     ENABLED: 'ENABLED',
     OPENING: 'OPENING',
@@ -70,14 +70,14 @@ export const GameConfig = Object.freeze({
     OPEN_BONUS: 'OPEN_BONUS',
     OPEN_LOSE: 'OPEN_LOSE',
     DISABLED: 'DISABLED',
-  }),
+  },
 
   // Game states
-  GAME_STATE: Object.freeze({
+  GAME_STATE: {
     IDLE: 'IDLE',
     PLAYING: 'PLAYING',
     CHEST_OPENING: 'CHEST_OPENING',
     BONUS_SCREEN: 'BONUS_SCREEN',
     RESETTING: 'RESETTING',
-  }),
-});
+  },
+};

@@ -14,6 +14,7 @@ export class EventEmitter {
     if (!this._listeners.has(event)) {
       this._listeners.set(event, new Set());
     }
+
     this._listeners.get(event).add(listener);
     return () => this.off(event, listener);
   }
@@ -65,7 +66,7 @@ export class EventEmitter {
 
 export const GameEvents = new EventEmitter();
 
-export const EVENTS = Object.freeze({
+export const EVENTS = {
   PLAY_CLICKED: 'PLAY_CLICKED',
   CHEST_CLICKED: 'CHEST_CLICKED',
   CHEST_OPEN_COMPLETE: 'CHEST_OPEN_COMPLETE',
@@ -73,4 +74,4 @@ export const EVENTS = Object.freeze({
   ALL_CHESTS_OPENED: 'ALL_CHESTS_OPENED',
   RESET_COMPLETE: 'RESET_COMPLETE',
   STATE_CHANGED: 'STATE_CHANGED',
-});
+};

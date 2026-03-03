@@ -75,6 +75,7 @@ export class GameController {
 
 		if (resultType === 'BONUS') {
 			this._setState(GAME_STATE.BONUS_SCREEN);
+
 			this._bonusScreen.show(amount).catch((err) => {
 				console.error('[GameController] Bonus screen failed:', err);
 				GameEvents.emit(EVENTS.BONUS_SCREEN_COMPLETE, { amount });
@@ -100,9 +101,7 @@ export class GameController {
 		} else {
 			this._setState(GAME_STATE.PLAYING);
 
-			this._chests.forEach((chest) => {
-				if (!chest.isOpen) chest.enable();
-			});
+			this._chests.forEach((chest) => !chest.isOpen && chest.enable());
 		}
 	}
 
@@ -118,8 +117,10 @@ export class GameController {
 
 		this._combiendAmount = 0;
     this._openedCount = 0;
-    this._setState(GAME_STATE.IDLE);
+
     this._playButton.enable();
+
+    this._setState(GAME_STATE.IDLE);
 	}
 
 	/**
