@@ -4,22 +4,6 @@ Interactive treasure chest game built with **PIXI.js** and **ES6 JavaScript**. P
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Game Flow](#game-flow)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Class Reference](#class-reference)
-- [Production Deployment](#production-deployment)
-- [Environment Requirements](#environment-requirements)
-- [Known Limitations](#known-limitations)
-
----
-
 ## Overview
 
 Treasure Quest is a browser-based mini-game featuring:
