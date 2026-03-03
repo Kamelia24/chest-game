@@ -79,7 +79,7 @@ chest-game/
 
 ```bash
 # Clone the repository
-git clone https://your-repo-url/treasure-quest.git
+git clone https://github.com/Kamelia24/chest-game.git
 cd chest-game
 
 # Install dependencies
